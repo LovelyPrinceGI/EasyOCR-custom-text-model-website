@@ -2,4 +2,4 @@
 
 ## **Example of website inference interface**
 
-![alt text](image.png)
+![alt text](image/image.png)
