@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Thai OCR Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+    <h1>เว็บสแกนตัวอักษรภาษาไทย 🇹🇭</h1>
+    <p>อัปโหลดรูปภาพที่มีตัวอักษร แล้วเราจะสแกนให้เองค่ะ!</p>
+
+    <form id="upload-form">
+        <input type="file" id="file-input" name="file" accept="image/*" required>
+        <button type="submit">สแกนเลย!</button>
+    </form>
+
+    <div id="result-container">
+        <h2>ผลลัพธ์:</h2>
+        <p id="prediction-text">...</p>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
